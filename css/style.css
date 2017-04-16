@@ -3,27 +3,44 @@
  * Common
  *
  */
-body, html, .main{
+ @import url(http://weloveiconfonts.com/api/?family=zocial);
+ /* zocial */
+ [class*="zocial-"]:before {
+   font-family: 'zocial', sans-serif;
+ }
+
+body,
+html,
+.main{
   margin: 0;
   padding: 0;
   width: 100%;
   height: 100%;
 }
+
 body {
-  font-family: 'Lato', sans-serif;
+  font-family: "Lato", sans-serif;
   color: #000;
   font-size: 12px;
   color: #424242;
 }
 
-h1, h3, h4, h5 {
+h1,
+h3,
+h4,
+h5 {
   margin: 0;
 }
+
 h2 {
    margin: 10px 20px;
 }
 
-header, nav, footer, section, article, div {
+header,
+footer,
+section,
+article,
+div {
   box-sizing: border-box;
 }
 
@@ -33,9 +50,12 @@ ul {
   margin: 0;
 }
 
-img ,object,video{
+img,
+object,
+video{
   max-width: 100%;
 }
+
 .row {
   margin-right: auto;
 }
@@ -47,23 +67,23 @@ img ,object,video{
  */
 
 
- .header__logo {
+.header__logo {
    height: 72px;
    margin-right: 1em;
    vertical-align: top;
    margin-top: 12px;
- }
+}
 
 .header__titles{
   text-align: right;
   margin: 25px 0px 0px 0px;
 }
 
- .header__title {
+.header__title {
    font-weight: 300;
    font-size: 4em;
    color: #212121;
- }
+}
 
 .logo {
     margin: 2px 0 4px 13px;
@@ -83,6 +103,9 @@ img ,object,video{
 *
 */
 
+.section{
+  font-size: 2px;
+}
 .featured-work img {
     height: 270px;
     max-height: 270px;
@@ -91,18 +114,27 @@ img ,object,video{
 
 @media screen  and (max-width:992px) {
 
-  h1, h2, h3, th, p {
+  h2,
+  h3,
+  th,
+  p {
     text-align: center;
   }
-  .logo {
-    display: none;
-  }
+  /*
+    Header
+  */
   .pull-right {
     float: none !important;
   }
   .header__titles {
     text-align: center;
   }
+  .header__title {
+    font-size: 3em;
+  }
+  /*
+    Body
+  */
   .featured-work img{
     max-height: 100%;
     height: auto;
@@ -121,6 +153,15 @@ img ,object,video{
   }
 }
 
+@media screen and (max-width:557px) {
+  /*
+    Header
+  */
+  .header__title {
+    font-size: 2em;
+  }
+}
+
 /*
 *
 *
@@ -133,10 +174,13 @@ img ,object,video{
     margin-bottom: 20px;
 }
 
-.social p {
+.social i {
     font-size: 30px;
     cursor: pointer;
-    display: inline;
+    margin-right: 20px;
+}
+.social i:last-child {
+    margin-right: 0;
 }
 .face:hover{color: white;background: #0363f9;}
 .twitter:hover{color: #1da1f2;}
