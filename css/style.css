@@ -3,15 +3,15 @@
  * Common
  *
  */
- @import url(http://weloveiconfonts.com/api/?family=zocial);
+@import url(http://weloveiconfonts.com/api/?family=zocial);
  /* zocial */
- [class*="zocial-"]:before {
-   font-family: 'zocial', sans-serif;
- }
+[class*="zocial-"]:before {
+  font-family: 'zocial', sans-serif;
+}
 
 body,
 html,
-.main{
+.main {
   margin: 0;
   padding: 0;
   width: 100%;
@@ -33,7 +33,7 @@ h5 {
 }
 
 h2 {
-   margin: 10px 20px;
+  margin: 10px 20px;
 }
 
 header,
@@ -52,7 +52,7 @@ ul {
 
 img,
 object,
-video{
+video {
   max-width: 100%;
 }
 
@@ -68,33 +68,36 @@ video{
 
 
 .header__logo {
-   height: 72px;
-   margin-right: 1em;
-   vertical-align: top;
-   margin-top: 12px;
+  height: 72px;
+  margin-right: 1em;
+  vertical-align: top;
+  margin-top: 12px;
 }
 
-.header__titles{
+.header__titles {
   text-align: right;
   margin: 25px 0px 0px 0px;
 }
 
 .header__title {
-   font-weight: 300;
-   font-size: 4em;
-   color: #212121;
+  font-weight: 300;
+  font-size: 4em;
+  color: #212121;
 }
 
 .logo {
-    margin: 2px 0 4px 13px;
-    border-radius: 29%;
-    width: 175px;
+  margin: 2px 0 4px 13px;
+  border-radius: 29%;
+  width: 175px;
 }
 
-#slogan {
-    margin: 25px 0 0 0;
+.slogan {
+  margin-top: 25px;
 }
-
+.hr-rule {
+    border-bottom: 1px solid gray;
+    margin-bottom: 10px;
+}
 /*
 *
 *
@@ -103,13 +106,14 @@ video{
 *
 */
 
-.section{
+.section {
   font-size: 2px;
 }
-.featured-work img {
-    height: 270px;
-    max-height: 270px;
-    max-width: 330px;
+
+.featured-img{
+  height: 270px;
+  max-height: 270px;
+  max-width: 330px;
 }
 
 @media screen  and (max-width:992px) {
@@ -126,29 +130,34 @@ video{
   .pull-right {
     float: none !important;
   }
+
   .header__titles {
     text-align: center;
   }
+
   .header__title {
     font-size: 3em;
   }
   /*
     Body
   */
-  .featured-work img{
+  .featured-work img {
     max-height: 100%;
     height: auto;
     max-width: 100%;
     width: 100%;
     overflow: hidden;
   }
+
   P {
     font-size: 20px;
   }
+
   .social {
     text-align: center;
   }
-  table{
+
+  table {
     width: 100%;
   }
 }
@@ -171,17 +180,28 @@ video{
 */
 
 .footer {
-    margin-bottom: 20px;
+  margin-bottom: 20px;
 }
 
-.social i {
-    font-size: 30px;
-    cursor: pointer;
-    margin-right: 20px;
+ i {
+  font-size: 30px;
+  cursor: pointer;
+  margin-right: 20px;
 }
+
 .social i:last-child {
-    margin-right: 0;
+  margin-right: 0;
 }
-.face:hover{color: white;background: #0363f9;}
-.twitter:hover{color: #1da1f2;}
-.google-plus:hover{color: red;}
+
+.face:hover {
+  color: white;
+  background: #0363f9;
+}
+
+.twitter:hover {
+  color: #1da1f2;
+}
+
+.google-plus:hover {
+  color: red;
+}
